@@ -1,1 +1,0 @@
-import{r as e,A as r,j as s}from"./index-BH1K1oee.js";const a=()=>{const t=e.useContext(r);return s.jsxs(s.Fragment,{children:[s.jsx("h1",{children:"User settings"}),s.jsxs("p",{children:["User name: ",t.userName]})]})};export{a as default};
