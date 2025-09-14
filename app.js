@@ -48,7 +48,7 @@ mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD
 // mongoose.connect(`mongodb+srv://toDoAppAdmin:Loop123XYZ@cluster0.z6beont.mongodb.net/toDoApp?retryWrites=true&w=majority&appName=Cluster0`)
 
 .then(()=>{
-    app.listen(5000);
+    app.listen(process.env.PORT || 5000);
 })
 .catch(err=>{
     console.log(err);
