@@ -18,7 +18,7 @@ router.post('/',
             .not()
             .isEmpty(),
         check('description')
-            .isLength({ min: 3 })
+            .isLength({ min: 3, max: 150 })
     ],
     itemsController.createItem
 );
@@ -29,7 +29,7 @@ router.patch('/:iid',
             .not()
             .isEmpty(),
         check('description')
-            .isLength({ min: 3 })
+            .isLength({ min: 3, max: 150 })
     ],
     itemsController.updateItem
 );
